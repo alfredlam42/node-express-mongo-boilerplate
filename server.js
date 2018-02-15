@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 const port = process.env.PORT || 4200;
 
-// Initializing Database
+// Initialize Database
 db.connect(process.env.DB_ENDPOINT, function(err){
 	if (err){
 		console.log('Unable to connect to database.');

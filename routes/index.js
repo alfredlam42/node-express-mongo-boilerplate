@@ -1,7 +1,7 @@
 const fooRoute = require('./foo.js');
 
-function init(server){
-	server.use('/foo', fooRoute);
+function init(server, db){
+	server.use('/foo', fooRoute(db));
 }
 
 module.exports = {
